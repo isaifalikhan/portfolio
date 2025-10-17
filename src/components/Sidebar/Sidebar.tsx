@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { Home, User, Wrench, Briefcase, Mail, GraduationCap, X } from 'lucide-react';
+import { Home, User, Wrench, Briefcase, Mail, GraduationCap } from 'lucide-react';
 
 const navItems = [
   { name: 'Home', href: '/', icon: Home },
@@ -13,21 +13,16 @@ const navItems = [
   { name: 'Contact', href: '/contact', icon: Mail },
 ];
 
-export default function Sidebar({ onToggle }: { onToggle?: () => void }) {
+export default function Sidebar({ open }: { open: boolean }) {
   const pathname = usePathname();
   return (
-    <aside
+    <motion.aside
       className="fixed left-4 top-1/2 -translate-y-1/2 z-40 text-white"
       aria-label="Sidebar navigation"
+      initial={{ x: 0, opacity: 1 }}
+      animate={{ x: open ? 0 : -220, opacity: open ? 1 : 0 }}
+      transition={{ type: 'tween', ease: 'easeOut', duration: 0.25 }}
     >
-      <button
-        onClick={() => onToggle?.()}
-        aria-label={'Close sidebar'}
-        className="w-12 h-12 mb-2 flex items-center justify-center rounded-full border border-white/20 bg-white/10 hover:bg-white/15"
-      >
-        <X className="w-5 h-5" />
-      </button>
-
       <nav className="flex flex-col items-start gap-3">
         {navItems.map((item) => {
           const Icon = item.icon;
@@ -61,6 +56,6 @@ export default function Sidebar({ onToggle }: { onToggle?: () => void }) {
           );
         })}
       </nav>
-    </aside>
+    </motion.aside>
   );
 }
