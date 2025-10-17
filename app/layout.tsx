@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LayoutShell from "@/src/components/LayoutShell";
+import SmoothScrolling from "@/src/components/SmoothScrolling";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <LayoutShell>
-          {children}
-        </LayoutShell>
+        <SmoothScrolling>
+          <LayoutShell>
+            {children}
+          </LayoutShell>
+        </SmoothScrolling>
       </body>
     </html>
   );

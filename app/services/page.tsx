@@ -13,111 +13,93 @@ const ServicesPage = () => {
   const services = [
     {
       icon: <Code2 className="w-12 h-12" />,
-      title: 'Custom Web Development',
-      description: 'Tailored web applications built with modern technologies and best practices.',
+      title: 'Frontend Web Development',
+      description: 'Modern, responsive websites built with cutting-edge technologies and best practices.',
       features: [
         'Responsive Design',
-        'Progressive Web Apps',
-        'Single Page Applications',
-        'Cross-browser Compatibility',
+        'React & Next.js Applications',
         'Performance Optimization',
-        'SEO Optimization'
+        'Cross-browser Compatibility',
+        'SEO Optimization',
+        'Mobile-First Development'
       ],
-      technologies: ['React', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS'],
+      technologies: ['React JS', 'Next JS', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'Bootstrap'],
       gradient: 'from-blue-600 to-indigo-700',
-      price: 'Starting at $5,000',
-      delivery: '4-8 weeks',
-      highlights: ['Custom Design', 'Mobile-First', 'SEO Ready']
+      price: 'Starting at $1,500',
+      delivery: '2-4 weeks',
+      highlights: ['Modern Design', 'Mobile-First', 'SEO Ready']
     },
     {
       icon: <Database className="w-12 h-12" />,
-      title: 'Backend & API Development',
-      description: 'Robust server-side solutions and RESTful/GraphQL APIs for your applications.',
+      title: 'WordPress Development',
+      description: 'Custom WordPress websites and e-commerce solutions tailored to your business needs.',
       features: [
-        'RESTful API Design',
-        'GraphQL Implementation',
-        'Database Architecture',
-        'Authentication Systems',
-        'API Documentation',
-        'Third-party Integrations'
+        'Custom Theme Development',
+        'WooCommerce Integration',
+        'Plugin Customization',
+        'Content Management',
+        'Performance Optimization',
+        'Security Implementation'
       ],
-      technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Redis'],
+      technologies: ['WordPress', 'WooCommerce', 'Elementor', 'Divi', 'PHP', 'MySQL'],
       gradient: 'from-emerald-600 to-green-700',
-      price: 'Starting at $4,500',
-      delivery: '3-6 weeks',
-      highlights: ['Scalable Architecture', 'Secure APIs', 'Comprehensive Docs']
+      price: 'Starting at $1,200',
+      delivery: '1-3 weeks',
+      highlights: ['Custom Themes', 'E-commerce Ready', 'Easy Management']
     },
     {
-      icon: <Cloud className="w-12 h-12" />,
-      title: 'Cloud Solutions & DevOps',
-      description: 'Scalable cloud infrastructure and deployment automation for growing businesses.',
+      icon: <Rocket className="w-12 h-12" />,
+      title: 'E-commerce Solutions',
+      description: 'Complete online store development with payment integration and inventory management.',
       features: [
-        'Cloud Architecture',
-        'CI/CD Pipelines',
-        'Containerization',
-        'Infrastructure as Code',
-        'Monitoring & Logging',
-        'Disaster Recovery'
+        'Online Store Setup',
+        'Payment Gateway Integration',
+        'Inventory Management',
+        'Order Processing',
+        'Customer Management',
+        'Analytics & Reporting'
       ],
-      technologies: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'GitHub Actions'],
+      technologies: ['WooCommerce', 'Shopify', 'React', 'API Integration', 'Stripe', 'PayPal'],
       gradient: 'from-violet-600 to-purple-700',
-      price: 'Starting at $6,000',
-      delivery: '2-4 weeks',
-      highlights: ['Auto-scaling', 'High Availability', 'Cost Optimized']
+      price: 'Starting at $2,000',
+      delivery: '2-5 weeks',
+      highlights: ['Secure Payments', 'Mobile Optimized', 'Scalable']
     },
     {
       icon: <Palette className="w-12 h-12" />,
-      title: 'UI/UX Design & Development',
-      description: 'Beautiful, intuitive interfaces that enhance user experience and engagement.',
+      title: 'UI/UX Development',
+      description: 'Beautiful, user-friendly interfaces that enhance user experience and engagement.',
       features: [
-        'User Research',
-        'Wireframing & Prototyping',
-        'Visual Design',
-        'Design Systems',
-        'User Testing',
-        'Accessibility Compliance'
+        'Responsive Design',
+        'User Interface Development',
+        'Interactive Components',
+        'Animation & Transitions',
+        'Accessibility Compliance',
+        'Cross-device Compatibility'
       ],
-      technologies: ['Figma', 'Adobe XD', 'Framer Motion', 'CSS3', 'WebGL'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Material UI', 'Framer Motion', 'Bootstrap'],
       gradient: 'from-amber-600 to-orange-600',
-      price: 'Starting at $3,500',
-      delivery: '3-5 weeks',
-      highlights: ['User-Centered', 'Pixel Perfect', 'Accessible']
-    },
-    {
-      icon: <BarChart3 className="w-12 h-12" />,
-      title: 'Data Visualization & Analytics',
-      description: 'Interactive dashboards and data visualization solutions for business intelligence.',
-      features: [
-        'Interactive Charts',
-        'Real-time Dashboards',
-        'Data Processing',
-        'Business Intelligence',
-        'Custom Metrics',
-        'Report Generation'
-      ],
-      technologies: ['D3.js', 'Chart.js', 'Python', 'Tableau', 'Power BI'],
-      gradient: 'from-rose-600 to-pink-700',
-      price: 'Starting at $4,000',
-      delivery: '4-6 weeks',
-      highlights: ['Real-time Data', 'Interactive', 'Insightful']
+      price: 'Starting at $1,000',
+      delivery: '1-3 weeks',
+      highlights: ['User-Centered', 'Interactive', 'Accessible']
     },
     {
       icon: <Shield className="w-12 h-12" />,
-      title: 'Security & Performance Audit',
-      description: 'Comprehensive security reviews and performance optimization for existing applications.',
+      title: 'Website Maintenance & Support',
+      description: 'Ongoing website maintenance, updates, and technical support to keep your site running smoothly.',
       features: [
-        'Security Assessment',
-        'Performance Testing',
-        'Code Review',
-        'Vulnerability Scanning',
-        'Load Testing',
-        'Best Practices Implementation'
+        'Regular Updates',
+        'Security Monitoring',
+        'Performance Optimization',
+        'Bug Fixes',
+        'Content Updates',
+        'Technical Support'
       ],
-      technologies: ['OWASP', 'Lighthouse', 'WebPageTest', 'Security Headers', 'SSL/TLS'],
-      gradient: 'from-cyan-600 to-blue-700',
-      price: 'Starting at $2,500',
-      delivery: '1-2 weeks',
-      highlights: ['Comprehensive Audit', 'Actionable Insights', 'Performance Boost']
+      technologies: ['WordPress', 'React', 'GitHub', 'Deployment', 'Monitoring Tools'],
+      gradient: 'from-rose-600 to-pink-700',
+      price: 'Starting at $500',
+      delivery: 'Monthly',
+      highlights: ['24/7 Support', 'Regular Updates', 'Peace of Mind']
     }
   ];
 

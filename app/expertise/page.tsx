@@ -7,29 +7,29 @@ export default function ExpertisePage() {
     {
       icon: <Code2 className="w-8 h-8" />,
       title: 'Frontend Development',
-      description: 'Building responsive, performant web applications with modern frameworks.',
-      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js'],
+      description: 'Building responsive, modern web applications with React and Next.js frameworks.',
+      technologies: ['React JS', 'Next JS', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
       gradient: 'from-blue-500 to-cyan-600'
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: 'Backend Development',
-      description: 'Scalable server-side solutions and API development.',
-      technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Redis'],
+      title: 'CMS & E-commerce',
+      description: 'Creating powerful websites and online stores with WordPress and e-commerce platforms.',
+      technologies: ['WordPress', 'WooCommerce', 'Elementor', 'Divi', 'Shopify', 'Custom Themes'],
       gradient: 'from-emerald-500 to-green-600'
     },
     {
       icon: <Cloud className="w-8 h-8" />,
-      title: 'Cloud & DevOps',
-      description: 'Cloud infrastructure and deployment automation.',
-      technologies: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
+      title: 'Development Tools',
+      description: 'Utilizing modern development tools and state management for efficient workflows.',
+      technologies: ['Redux Toolkit', 'API Integration', 'GitHub', 'Hooks & Context', 'Deployment'],
       gradient: 'from-violet-500 to-purple-600'
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: 'Security & Performance',
-      description: 'Secure, optimized applications with best practices.',
-      technologies: ['Web Security', 'Performance Optimization', 'Testing', 'Monitoring'],
+      title: 'Performance & UX',
+      description: 'Optimizing websites for performance, accessibility, and exceptional user experience.',
+      technologies: ['Responsive Design', 'Performance Optimization', 'Form Handling', 'Lazy Loading', 'Error Boundaries'],
       gradient: 'from-amber-500 to-orange-600'
     }
   ];
@@ -51,7 +51,7 @@ export default function ExpertisePage() {
             </span>
           </h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Deep expertise across the full development stack with focus on modern technologies and best practices.
+            Specialized expertise in frontend development, WordPress, and e-commerce solutions with focus on modern technologies and user experience.
           </p>
         </motion.div>
 

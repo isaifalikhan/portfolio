@@ -37,19 +37,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email',
-      value: 'hello@portfolio.com',
+      value: 'saifali87154@gmail.com',
       description: 'Send me an email anytime!'
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      description: 'Available Mon-Fri, 9AM-6PM'
+      value: '+92-3467124436',
+      description: 'Available for project discussions'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: 'Location',
-      value: 'Remote / Global',
+      value: 'Taxila Cantt, Pakistan',
       description: 'Working with clients worldwide'
     }
   ];
@@ -58,20 +58,14 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       name: 'GitHub',
-      url: '#',
+      url: 'https://github.com/saifali87154',
       color: 'hover:text-gray-400'
     },
     {
-      icon: <Linkedin className="w-6 h-6" />,
-      name: 'LinkedIn',
-      url: '#',
-      color: 'hover:text-blue-400'
-    },
-    {
-      icon: <Twitter className="w-6 h-6" />,
-      name: 'Twitter',
-      url: '#',
-      color: 'hover:text-sky-400'
+      icon: <Mail className="w-6 h-6" />,
+      name: 'Email',
+      url: 'mailto:saifali87154@gmail.com',
+      color: 'hover:text-emerald-400'
     }
   ];
 
@@ -220,7 +214,23 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold mb-1">{info.title}</h3>
-                        <p className="text-blue-400 font-medium">{info.value}</p>
+                        {info.title === 'Email' ? (
+                          <a 
+                            href={`mailto:${info.value}`}
+                            className="text-blue-400 font-medium hover:text-blue-300 transition-colors cursor-pointer"
+                          >
+                            {info.value}
+                          </a>
+                        ) : info.title === 'Phone' ? (
+                          <a 
+                            href={`tel:${info.value}`}
+                            className="text-blue-400 font-medium hover:text-blue-300 transition-colors cursor-pointer"
+                          >
+                            {info.value}
+                          </a>
+                        ) : (
+                          <p className="text-blue-400 font-medium">{info.value}</p>
+                        )}
                         <p className="text-sm text-gray-400">{info.description}</p>
                       </div>
                     </motion.div>

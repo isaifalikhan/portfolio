@@ -74,54 +74,80 @@ const HomePage = () => {
   const projects = [
     {
       id: 1,
-      title: 'Enterprise SaaS Platform',
-      description: 'A comprehensive business management solution with real-time analytics and AI-powered insights for enterprise clients.',
-      image: '💼',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Redis'],
-      category: 'Full Stack',
+      title: 'Anemoia.dev',
+      description: 'Professional web development agency website showcasing modern design and development services.',
+      image: '🌐',
+      technologies: ['React', 'Next.js', 'Tailwind CSS', 'TypeScript'],
+      category: 'Agency Website',
       status: 'Live',
       gradient: 'from-blue-600 to-indigo-700',
-      features: ['Real-time Dashboard', 'AI Analytics', 'Multi-tenant Architecture'],
-      liveUrl: '#',
+      features: ['Modern Design', 'Responsive Layout', 'Performance Optimized'],
+      liveUrl: 'https://anemoia.dev/',
       githubUrl: '#'
     },
     {
       id: 2,
-      title: 'Financial Analytics Dashboard',
-      description: 'Advanced financial data visualization and predictive analytics platform for investment firms and financial institutions.',
-      image: '📊',
-      technologies: ['TypeScript', 'Python', 'D3.js', 'FastAPI', 'MongoDB'],
-      category: 'Data Visualization',
+      title: 'Overnight Glasses',
+      description: 'E-commerce platform for prescription glasses with fast delivery and custom fitting solutions.',
+      image: '👓',
+      technologies: ['WordPress', 'WooCommerce', 'JavaScript', 'CSS'],
+      category: 'E-commerce',
       status: 'Live',
       gradient: 'from-emerald-600 to-teal-700',
-      features: ['Interactive Charts', 'Predictive Models', 'Real-time Data'],
-      liveUrl: '#',
+      features: ['Online Store', 'Custom Fitting', 'Fast Checkout'],
+      liveUrl: 'https://www.overnightglasses.com/',
       githubUrl: '#'
     },
     {
       id: 3,
-      title: 'Healthcare Management System',
-      description: 'Secure patient management platform with telemedicine capabilities and EHR integration for healthcare providers.',
-      image: '🏥',
-      technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'Docker', 'Kubernetes'],
-      category: 'Enterprise',
-      status: 'In Development',
+      title: 'Lin Manuel',
+      description: 'Personal portfolio website for renowned composer and playwright Lin-Manuel Miranda.',
+      image: '🎭',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      category: 'Portfolio',
+      status: 'Live',
       gradient: 'from-violet-600 to-purple-700',
-      features: ['HIPAA Compliant', 'Video Consultations', 'EHR Integration'],
-      liveUrl: '#',
+      features: ['Interactive Design', 'Media Gallery', 'Responsive Layout'],
+      liveUrl: 'https://www.linmanuel.com/',
       githubUrl: '#'
     },
     {
       id: 4,
-      title: 'E-commerce Intelligence Platform',
-      description: 'AI-powered analytics and automation suite for e-commerce businesses with multi-channel integration capabilities.',
-      image: '🛒',
-      technologies: ['Vue.js', 'NestJS', 'MySQL', 'Elasticsearch', 'RabbitMQ'],
-      category: 'AI/ML',
+      title: 'Navi Auto Transport',
+      description: 'Professional auto transport service website with booking system and tracking capabilities.',
+      image: '🚛',
+      technologies: ['WordPress', 'Elementor', 'CSS', 'JavaScript'],
+      category: 'Service Website',
       status: 'Live',
       gradient: 'from-amber-600 to-orange-600',
-      features: ['AI Recommendations', 'Inventory Management', 'Sales Analytics'],
-      liveUrl: '#',
+      features: ['Booking System', 'Vehicle Tracking', 'Quote Calculator'],
+      liveUrl: 'https://naviautotransport.com/',
+      githubUrl: '#'
+    },
+    {
+      id: 5,
+      title: 'Neufluence',
+      description: 'Digital marketing agency platform with comprehensive service offerings and client management.',
+      image: '📈',
+      technologies: ['React', 'Next.js', 'Tailwind CSS', 'API Integration'],
+      category: 'Marketing Platform',
+      status: 'Live',
+      gradient: 'from-pink-600 to-rose-700',
+      features: ['Client Dashboard', 'Service Management', 'Analytics'],
+      liveUrl: 'https://neufluence.com/',
+      githubUrl: '#'
+    },
+    {
+      id: 6,
+      title: 'STK Steakhouse',
+      description: 'Premium restaurant website with reservation system and menu showcase.',
+      image: '🥩',
+      technologies: ['WordPress', 'Custom Theme', 'JavaScript', 'CSS'],
+      category: 'Restaurant',
+      status: 'Live',
+      gradient: 'from-red-600 to-pink-700',
+      features: ['Online Reservations', 'Menu Display', 'Location Finder'],
+      liveUrl: 'https://stksteakhouse.com/',
       githubUrl: '#'
     }
   ];
@@ -172,57 +198,57 @@ const HomePage = () => {
     {
       icon: <Code2 className="w-8 h-8" />,
       title: 'Frontend Development',
-      description: 'Building responsive, performant web applications with modern frameworks.',
-      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js'],
+      description: 'Building responsive, high-performance websites with modern JavaScript frameworks.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'React JS', 'Next JS', 'TypeScript', 'Bootstrap', 'Tailwind CSS', 'Material UI'],
       gradient: 'from-blue-500 to-cyan-600'
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: 'Backend Development',
-      description: 'Scalable server-side solutions and API development.',
-      technologies: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'Redis'],
+      title: 'CMS & E-commerce',
+      description: 'Expert in WordPress development and e-commerce solutions.',
+      technologies: ['WordPress', 'WooCommerce', 'Elementor', 'Divi', 'Shopify'],
       gradient: 'from-emerald-500 to-green-600'
     },
     {
       icon: <Cloud className="w-8 h-8" />,
-      title: 'Cloud & DevOps',
-      description: 'Cloud infrastructure and deployment automation.',
-      technologies: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
+      title: 'Development Tools',
+      description: 'Modern development workflow and deployment practices.',
+      technologies: ['Redux Toolkit', 'API Integration', 'GitHub', 'Deployment', 'Hooks & Context API'],
       gradient: 'from-violet-500 to-purple-600'
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: 'Security & Performance',
-      description: 'Secure, optimized applications with best practices.',
-      technologies: ['Web Security', 'Performance Optimization', 'Testing', 'Monitoring'],
+      title: 'Performance & UX',
+      description: 'Optimized user experiences with performance best practices.',
+      technologies: ['Form Handling & Validation', 'Lazy Loading', 'Error Boundaries', 'Responsive Design'],
       gradient: 'from-amber-500 to-orange-600'
     }
   ];
 
   const experience = [
     {
-      role: 'Senior Full Stack Developer',
-      company: 'Tech Solutions Inc.',
-      period: '2022 - Present',
-      description: 'Lead development of enterprise SaaS products, mentor junior developers, and implement scalable architectures.',
-      achievements: ['Improved performance by 40%', 'Led team of 5 developers', 'Reduced costs by 25%'],
-      technologies: ['React', 'Node.js', 'AWS', 'PostgreSQL']
+      role: 'Website Developer',
+      company: 'MarQ Networks',
+      period: '04/2025 - Present',
+      description: 'Contributing to full-stack website projects within a fast-paced digital agency environment.',
+      achievements: ['Integrated performance-driven frontend interfaces using React', 'Optimized workflows with GitHub and API-based solutions', 'Supported clients across e-commerce, real estate, and SaaS industries'],
+      technologies: ['React', 'GitHub', 'API Integration', 'Frontend Optimization']
     },
     {
-      role: 'Full Stack Developer',
-      company: 'Digital Innovations',
-      period: '2020 - 2022',
-      description: 'Developed full-stack applications for various clients, focusing on scalability and user experience.',
-      achievements: ['Delivered 15+ projects', 'Increased user satisfaction by 35%', 'Implemented CI/CD pipelines'],
-      technologies: ['Vue.js', 'Python', 'MongoDB', 'Docker']
+      role: 'Front End Developer',
+      company: 'Anemoia.dev',
+      period: '10/2024 - Present',
+      description: 'Developing high-performance websites and applications using WordPress, React, and Next.js.',
+      achievements: ['Delivered tailored digital solutions for international clients', 'Optimized frontend performance across all platforms', 'Collaborated on UX/UI and ensured responsive design practices'],
+      technologies: ['WordPress', 'React', 'Next.js', 'UX/UI', 'Responsive Design']
     },
     {
-      role: 'Frontend Developer',
-      company: 'Creative Web Agency',
-      period: '2019 - 2020',
-      description: 'Built responsive web interfaces and collaborated with design teams to create engaging user experiences.',
-      achievements: ['Built 20+ websites', 'Improved load times by 60%', 'Mobile-first approach'],
-      technologies: ['JavaScript', 'CSS3', 'WordPress', 'PHP']
+      role: 'Front End Developer',
+      company: 'Dexter Code',
+      period: '07/2022 - 07/2023',
+      description: 'Built and maintained responsive websites using HTML, CSS, JavaScript, and Bootstrap.',
+      achievements: ['Customized WordPress themes for client requirements', 'Collaborated with design teams to meet client expectations', 'Ensured modern frontend standards and agile delivery cycles'],
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'WordPress']
     }
   ];
 
@@ -306,10 +332,10 @@ const HomePage = () => {
             className="text-5xl md:text-7xl font-bold mb-6"
           >
             <span className="bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
-              Professional
+              Saif Ali
             </span>
             <br />
-            <span className="text-white">Full Stack Developer</span>
+            <span className="text-white">Website Developer</span>
           </motion.h1>
           
           <motion.p
@@ -318,7 +344,7 @@ const HomePage = () => {
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed"
           >
-            Building scalable web applications with modern technologies and clean, efficient code.
+            Computer Science graduate with hands-on experience in professional website development. Building responsive, high-performance websites using React, WordPress, and modern web technologies.
           </motion.p>
 
           <motion.div
@@ -355,7 +381,7 @@ const HomePage = () => {
           >
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Based Worldwide</span>
+              <span>Taxila Cantt, Pakistan</span>
             </div>
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
@@ -402,19 +428,20 @@ const HomePage = () => {
             </h2>
             
             <p className="text-lg text-gray-400 leading-relaxed">
-              With over 5 years of experience in full-stack development, I specialize in creating robust, 
-              scalable web applications that drive business growth. My expertise spans modern JavaScript 
-              frameworks, cloud technologies, and agile development methodologies.
+              Computer Science graduate with hands-on experience in professional website development. 
+              Skilled in building responsive, high-performance websites using HTML, CSS, JavaScript, React, 
+              WordPress, and Shopify. Passionate about clean code, modern design, and delivering engaging 
+              web experiences that meet business needs.
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">50+</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">15+</div>
                 <div className="text-gray-400 text-sm mt-2">Projects Completed</div>
               </div>
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
-                <div className="text-3xl font-bold bg-gradient-to-r from-emerald-500 to-green-500 bg-clip-text text-transparent">30+</div>
-                <div className="text-gray-400 text-sm mt-2">Happy Clients</div>
+                <div className="text-3xl font-bold bg-gradient-to-r from-emerald-500 to-green-500 bg-clip-text text-transparent">3+</div>
+                <div className="text-gray-400 text-sm mt-2">Years Experience</div>
               </div>
             </div>
           </motion.div>
@@ -800,20 +827,32 @@ const HomePage = () => {
 
               <div className="flex flex-wrap justify-center gap-4 mt-12 pt-12 border-t border-white/10">
                 {[
-                  { icon: <Github className="w-5 h-5" />, label: 'GitHub' },
-                  { icon: <Linkedin className="w-5 h-5" />, label: 'LinkedIn' },
-                  { icon: <Mail className="w-5 h-5" />, label: 'Email' }
-                ].map((social, idx) => (
+                  { icon: <Mail className="w-5 h-5" />, label: 'saifali87154@gmail.com', href: 'mailto:saifali87154@gmail.com' },
+                  { icon: <MapPin className="w-5 h-5" />, label: 'Taxila Cantt, Pakistan', href: '#' },
+                  { icon: <Github className="w-5 h-5" />, label: 'GitHub', href: '#' }
+                ].map((contact, idx) => (
                   <motion.a
                     key={idx}
                     whileHover={{ scale: 1.1, y: -2 }}
-                    href="#"
+                    href={contact.href}
                     className="group flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all"
                   >
-                    {social.icon}
-                    <span className="font-semibold">{social.label}</span>
+                    {contact.icon}
+                    <span className="font-semibold text-sm">{contact.label}</span>
                   </motion.a>
                 ))}
+              </div>
+              
+              <div className="text-center mt-8">
+                <p className="text-gray-400">
+                  <span className="font-semibold text-emerald-400">Phone:</span> 
+                  <a 
+                    href="tel:+92-3467124436" 
+                    className="ml-1 hover:text-emerald-400 transition-colors cursor-pointer"
+                  >
+                    +92-3467124436
+                  </a>
+                </p>
               </div>
             </div>
           </motion.div>
@@ -825,7 +864,7 @@ const HomePage = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent font-semibold">
-              Portfolio
+              Saif Ali
             </div>
             <div className="flex gap-8 text-gray-400 text-sm">
               {['Hero', 'About', 'Projects', 'Contact'].map(item => (
@@ -845,7 +884,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="text-center mt-8 text-gray-500 text-sm">
-            <p>© 2025 Portfolio. Crafted with <Heart className="inline w-4 h-4 text-red-500 fill-red-500" /> using Next.js & Tailwind CSS</p>
+            <p>© 2025 Saif Ali. Crafted with <Heart className="inline w-4 h-4 text-red-500 fill-red-500" /> using Next.js & Tailwind CSS</p>
           </div>
         </div>
       </footer>

@@ -9,85 +9,85 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Enterprise SaaS Platform',
-      description: 'A comprehensive business management solution with real-time analytics and AI-powered insights for enterprise clients.',
-      image: '💼',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'AWS', 'Redis'],
-      category: 'Full Stack',
+      title: 'Anemoia.dev',
+      description: 'Professional web development agency website showcasing modern design principles and interactive user experiences. Built with cutting-edge technologies to deliver exceptional performance.',
+      image: '🌐',
+      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      category: 'Web Development',
       status: 'Live',
       gradient: 'from-blue-600 to-indigo-700',
-      features: ['Real-time Dashboard', 'AI Analytics', 'Multi-tenant Architecture'],
-      liveUrl: '#',
+      features: ['Responsive Design', 'Interactive Animations', 'Modern UI/UX'],
+      liveUrl: 'https://anemoia.dev',
       githubUrl: '#'
     },
     {
       id: 2,
-      title: 'Financial Analytics Dashboard',
-      description: 'Advanced financial data visualization and predictive analytics platform for investment firms and financial institutions.',
-      image: '📊',
-      technologies: ['TypeScript', 'Python', 'D3.js', 'FastAPI', 'MongoDB'],
-      category: 'Data Visualization',
+      title: 'Overnight Glasses',
+      description: 'E-commerce platform for prescription glasses with advanced product customization, virtual try-on features, and seamless checkout experience.',
+      image: '👓',
+      technologies: ['WordPress', 'WooCommerce', 'JavaScript', 'CSS3', 'PHP'],
+      category: 'E-commerce',
       status: 'Live',
       gradient: 'from-emerald-600 to-teal-700',
-      features: ['Interactive Charts', 'Predictive Models', 'Real-time Data'],
-      liveUrl: '#',
+      features: ['Product Customization', 'Payment Integration', 'Inventory Management'],
+      liveUrl: 'https://overnightglasses.com',
       githubUrl: '#'
     },
     {
       id: 3,
-      title: 'Healthcare Management System',
-      description: 'Secure patient management platform with telemedicine capabilities and EHR integration for healthcare providers.',
-      image: '🏥',
-      technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'Docker', 'Kubernetes'],
-      category: 'Enterprise',
-      status: 'In Development',
+      title: 'Lin Manuel Portfolio',
+      description: 'Personal portfolio website for Lin-Manuel Miranda featuring elegant design, smooth animations, and comprehensive showcase of achievements and works.',
+      image: '🎭',
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'jQuery'],
+      category: 'Portfolio',
+      status: 'Live',
       gradient: 'from-violet-600 to-purple-700',
-      features: ['HIPAA Compliant', 'Video Consultations', 'EHR Integration'],
-      liveUrl: '#',
+      features: ['Elegant Design', 'Smooth Animations', 'Content Showcase'],
+      liveUrl: 'https://linmanuel.com',
       githubUrl: '#'
     },
     {
       id: 4,
-      title: 'E-commerce Mobile App',
-      description: 'Cross-platform mobile application with advanced features for modern e-commerce businesses.',
-      image: '📱',
-      technologies: ['React Native', 'Firebase', 'Stripe', 'Redux'],
-      category: 'Mobile',
+      title: 'Navi Auto Transport',
+      description: 'Professional auto transport service website with quote calculator, service booking system, and comprehensive vehicle shipping solutions.',
+      image: '🚛',
+      technologies: ['WordPress', 'Elementor', 'CSS3', 'JavaScript', 'PHP'],
+      category: 'Business Website',
       status: 'Live',
       gradient: 'from-rose-600 to-red-700',
-      features: ['Push Notifications', 'Payment Gateway', 'Offline Support'],
-      liveUrl: '#',
+      features: ['Quote Calculator', 'Service Booking', 'Responsive Design'],
+      liveUrl: 'https://naviautotransport.com',
       githubUrl: '#'
     },
     {
       id: 5,
-      title: 'AI Content Generator',
-      description: 'Intelligent content creation platform powered by machine learning algorithms.',
-      image: '🤖',
-      technologies: ['Python', 'TensorFlow', 'React', 'FastAPI', 'Elasticsearch'],
-      category: 'AI/ML',
-      status: 'Beta',
+      title: 'Neufluence',
+      description: 'Digital marketing agency platform featuring modern design, service showcases, and client portfolio with advanced content management capabilities.',
+      image: '📈',
+      technologies: ['WordPress', 'Divi', 'CSS3', 'JavaScript', 'PHP'],
+      category: 'Agency Website',
+      status: 'Live',
       gradient: 'from-cyan-600 to-blue-700',
-      features: ['AI Generation', 'Content Optimization', 'Multi-language Support'],
-      liveUrl: '#',
+      features: ['Service Showcase', 'Client Portfolio', 'Content Management'],
+      liveUrl: 'https://neufluence.com',
       githubUrl: '#'
     },
     {
       id: 6,
-      title: 'Real Estate Platform',
-      description: 'Modern real estate marketplace with virtual tours and advanced search capabilities.',
-      image: '🏠',
-      technologies: ['Vue.js', 'Laravel', 'MySQL', 'AWS S3', 'WebRTC'],
-      category: 'Full Stack',
+      title: 'STK Steakhouse',
+      description: 'Premium restaurant website with elegant design, menu showcase, reservation system, and location finder for the luxury dining experience.',
+      image: '🥩',
+      technologies: ['WordPress', 'Custom Theme', 'CSS3', 'JavaScript', 'PHP'],
+      category: 'Restaurant Website',
       status: 'Live',
       gradient: 'from-amber-600 to-orange-600',
-      features: ['Virtual Tours', 'Advanced Search', 'Property Management'],
-      liveUrl: '#',
+      features: ['Menu Showcase', 'Reservation System', 'Location Finder'],
+      liveUrl: 'https://stksteakhouse.com',
       githubUrl: '#'
     }
   ];
 
-  const categories = ['All', 'Full Stack', 'Mobile', 'AI/ML', 'Enterprise', 'Data Visualization'];
+  const categories = ['All', 'Web Development', 'E-commerce', 'Portfolio', 'Business Website', 'Agency Website', 'Restaurant Website'];
 
   const filteredProjects = activeFilter === 'All' 
     ? projects 
@@ -112,8 +112,8 @@ const Projects = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              A collection of projects showcasing my expertise in modern web development, 
-              from enterprise applications to innovative AI-powered solutions.
+              A collection of real-world projects showcasing my expertise in web development, 
+              from e-commerce platforms to professional business websites and portfolio sites.
             </p>
           </motion.div>
 

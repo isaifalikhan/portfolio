@@ -9,26 +9,26 @@ import {
 const About = () => {
   const skills = [
     {
-      category: 'Frontend',
-      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js', 'Angular'],
+      category: 'Frontend Development',
+      technologies: ['React JS', 'Next JS', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
       icon: <Code2 className="w-6 h-6" />,
       gradient: 'from-blue-500 to-cyan-600'
     },
     {
-      category: 'Backend',
-      technologies: ['Node.js', 'Python', 'Express.js', 'FastAPI', 'GraphQL', 'REST APIs'],
+      category: 'Styling & UI',
+      technologies: ['Tailwind CSS', 'Bootstrap', 'Material UI', 'Responsive Design', 'CSS Grid', 'Flexbox'],
       icon: <Database className="w-6 h-6" />,
       gradient: 'from-emerald-500 to-green-600'
     },
     {
-      category: 'Cloud & DevOps',
-      technologies: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform', 'Jenkins'],
+      category: 'CMS & E-commerce',
+      technologies: ['WordPress', 'WooCommerce', 'Elementor', 'Divi', 'Shopify', 'Custom Themes'],
       icon: <Cloud className="w-6 h-6" />,
       gradient: 'from-violet-500 to-purple-600'
     },
     {
-      category: 'Database & Security',
-      technologies: ['PostgreSQL', 'MongoDB', 'Redis', 'Web Security', 'OAuth', 'JWT'],
+      category: 'Development Tools',
+      technologies: ['Redux Toolkit', 'API Integration', 'GitHub', 'Hooks & Context', 'Form Handling', 'Performance Optimization'],
       icon: <Shield className="w-6 h-6" />,
       gradient: 'from-amber-500 to-orange-600'
     }
@@ -37,18 +37,18 @@ const About = () => {
   const achievements = [
     {
       icon: <Award className="w-8 h-8" />,
-      title: '50+ Projects Delivered',
+      title: '15+ Projects Delivered',
       description: 'Successfully completed projects across various industries'
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: '30+ Happy Clients',
+      title: 'Happy Clients',
       description: 'Built lasting relationships with satisfied customers'
     },
     {
       icon: <Calendar className="w-8 h-8" />,
-      title: '5+ Years Experience',
-      description: 'Continuous learning and professional growth'
+      title: '3+ Years Experience',
+      description: 'Continuous learning and professional growth in web development'
     }
   ];
 
@@ -73,9 +73,9 @@ const About = () => {
               <span className="text-white">Developer</span>
             </h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              I{"'"}m a full-stack developer with a passion for creating innovative web applications 
-              that solve real-world problems. With expertise in modern technologies and a focus 
-              on clean, efficient code.
+              I{"'"}m a website developer with a passion for creating modern, responsive websites 
+              that deliver exceptional user experiences. With expertise in React, WordPress, and 
+              e-commerce solutions, I focus on clean, efficient code and beautiful design.
             </p>
           </motion.div>
 
@@ -108,20 +108,20 @@ const About = () => {
                 </span>
               </h2>
               <p className="text-gray-400 leading-relaxed">
-                Started my journey in web development 5 years ago, I{"'"}ve had the privilege of working 
-                with startups and established companies to bring their digital visions to life. 
-                My approach combines technical expertise with creative problem-solving.
+                Started my journey in web development 3+ years ago, I{"'"}ve had the privilege of working 
+                with various companies including MarQ Networks, Anemoia.dev, and Dexter Code to bring 
+                their digital visions to life. My approach combines technical expertise with modern design principles.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                I believe in writing clean, maintainable code and staying up-to-date with the latest 
-                technologies and best practices. When I{"'"}m not coding, you{"'"}ll find me exploring new 
-                frameworks, contributing to open-source projects, or mentoring aspiring developers.
+                I specialize in creating responsive websites using React, Next.js, WordPress, and e-commerce 
+                platforms. I believe in writing clean, maintainable code and delivering projects that not only 
+                look great but also perform exceptionally well across all devices.
               </p>
               
               <div className="flex items-center gap-4 pt-4">
                 <div className="flex items-center gap-2 text-blue-400">
                   <MapPin className="w-5 h-5" />
-                  <span>Remote / Global</span>
+                  <span>Taxila Cantt, Pakistan</span>
                 </div>
                 <div className="flex items-center gap-2 text-emerald-400">
                   <Calendar className="w-5 h-5" />
