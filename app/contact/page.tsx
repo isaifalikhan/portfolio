@@ -58,13 +58,19 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       name: 'GitHub',
-      url: 'https://github.com/saifali87154',
+      url: 'https://github.com/isaifalikhan',
       color: 'hover:text-gray-400'
+    },
+    {
+      icon: <Linkedin className="w-6 h-6" />,
+      name: 'LinkedIn',
+      url: 'https://linkedin.com/in/saif-ali-56066a1b1/',
+      color: 'hover:text-blue-400'
     },
     {
       icon: <Mail className="w-6 h-6" />,
       name: 'Email',
-      url: 'mailto:saifali87154@gmail.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=saifali87154@gmail.com',
       color: 'hover:text-emerald-400'
     }
   ];
@@ -216,14 +222,18 @@ const Contact = () => {
                         <h3 className="font-semibold mb-1">{info.title}</h3>
                         {info.title === 'Email' ? (
                           <a 
-                            href={`mailto:${info.value}`}
+                            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${info.value}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-blue-400 font-medium hover:text-blue-300 transition-colors cursor-pointer"
                           >
                             {info.value}
                           </a>
                         ) : info.title === 'Phone' ? (
                           <a 
-                            href={`tel:${info.value}`}
+                            href={`https://wa.me/923467124436`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-blue-400 font-medium hover:text-blue-300 transition-colors cursor-pointer"
                           >
                             {info.value}

@@ -827,14 +827,17 @@ const HomePage = () => {
 
               <div className="flex flex-wrap justify-center gap-4 mt-12 pt-12 border-t border-white/10">
                 {[
-                  { icon: <Mail className="w-5 h-5" />, label: 'saifali87154@gmail.com', href: 'mailto:saifali87154@gmail.com' },
+                  { icon: <Mail className="w-5 h-5" />, label: 'saifali87154@gmail.com', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=saifali87154@gmail.com', target: '_blank' },
                   { icon: <MapPin className="w-5 h-5" />, label: 'Taxila Cantt, Pakistan', href: '#' },
-                  { icon: <Github className="w-5 h-5" />, label: 'GitHub', href: '#' }
+                  { icon: <Github className="w-5 h-5" />, label: 'GitHub', href: 'https://github.com/isaifalikhan', target: '_blank' },
+                  { icon: <Linkedin className="w-5 h-5" />, label: 'LinkedIn', href: 'https://linkedin.com/in/saif-ali-56066a1b1/', target: '_blank' }
                 ].map((contact, idx) => (
                   <motion.a
                     key={idx}
                     whileHover={{ scale: 1.1, y: -2 }}
                     href={contact.href}
+                    target={contact.target}
+                    rel={contact.target ? "noopener noreferrer" : undefined}
                     className="group flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-all"
                   >
                     {contact.icon}
@@ -847,7 +850,9 @@ const HomePage = () => {
                 <p className="text-gray-400">
                   <span className="font-semibold text-emerald-400">Phone:</span> 
                   <a 
-                    href="tel:+92-3467124436" 
+                    href="https://wa.me/923467124436" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="ml-1 hover:text-emerald-400 transition-colors cursor-pointer"
                   >
                     +92-3467124436
