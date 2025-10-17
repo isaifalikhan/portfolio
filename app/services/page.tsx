@@ -1,5 +1,4 @@
 "use client";
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Code2, Palette, Database, Cloud, Shield, 
@@ -9,7 +8,7 @@ import {
 import Link from 'next/link';
 
 const ServicesPage = () => {
-  const [activeService, setActiveService] = useState(0);
+  
 
   const services = [
     {
