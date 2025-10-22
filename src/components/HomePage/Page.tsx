@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, Github, Linkedin, Mail, MapPin, Calendar, Rocket, Heart, Code2, Database, ChevronDown, ArrowRight, Cloud, Shield, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, MapPin, Calendar, Rocket, Heart, Code2, Database, ArrowRight, Cloud, Shield, Eye, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
