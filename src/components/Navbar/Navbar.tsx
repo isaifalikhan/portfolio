@@ -34,8 +34,8 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Progress Bar */}
-      <div className="fixed top-0 left-0 w-full h-1 bg-slate-800 z-50">
+      {/* Progress Bar (mobile only) */}
+      <div className="md:hidden fixed top-0 left-0 w-full h-1 bg-slate-800 z-50">
         <motion.div 
           className="h-full bg-gradient-to-r from-blue-600 to-indigo-600"
           style={{ width: `${scrollProgress}%` }}
@@ -43,11 +43,11 @@ const Navbar = () => {
         />
       </div>
 
-      {/* Navigation */}
+      {/* Navigation (mobile only) */}
       <motion.nav 
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 w-full z-40 bg-slate-950/80 backdrop-blur-2xl border-b border-white/5"
+        className="md:hidden fixed top-0 w-full z-40 bg-slate-950/80 backdrop-blur-2xl border-b border-white/5"
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <Link href="/">

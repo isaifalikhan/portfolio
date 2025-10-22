@@ -17,7 +17,7 @@ export default function Sidebar({ open }: { open: boolean }) {
   const pathname = usePathname();
   return (
     <motion.aside
-      className="fixed left-4 top-1/2 -translate-y-1/2 z-40 text-white"
+      className="hidden md:block fixed left-4 top-1/2 -translate-y-1/2 z-40 text-white"
       aria-label="Sidebar navigation"
       initial={{ x: 0, opacity: 1 }}
       animate={{ x: open ? 0 : -220, opacity: open ? 1 : 0 }}
