@@ -13,12 +13,15 @@ const navItems = [
   { name: 'Contact', href: '/contact', icon: Mail },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ open }: { open: boolean }) {
   const pathname = usePathname();
   return (
-    <aside
+    <motion.aside
       className="fixed left-4 top-1/2 -translate-y-1/2 z-40 text-white"
       aria-label="Sidebar navigation"
+      initial={{ x: 0, opacity: 1 }}
+      animate={{ x: open ? 0 : -220, opacity: open ? 1 : 0 }}
+      transition={{ type: 'tween', ease: 'easeOut', duration: 0.25 }}
     >
       <nav className="flex flex-col items-start gap-3">
         {navItems.map((item) => {
@@ -53,6 +56,6 @@ export default function Sidebar() {
           );
         })}
       </nav>
-    </aside>
+    </motion.aside>
   );
 }
